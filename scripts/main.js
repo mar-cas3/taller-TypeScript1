@@ -8,7 +8,7 @@ function showSeriesTable() {
     for (var _i = 0, series_1 = series; _i < series_1.length; _i++) {
         var serie = series_1[_i];
         var tElement = document.createElement("tr");
-        tElement.innerHTML = "<td>".concat(serie.id, "</td>\n        <td style=\"font-style: bold\"><a href=").concat(serie.website, "> ").concat(serie.name, "</a></td>\n        <td>").concat(serie.channel, "</td>\n        <td>").concat(serie.seasons, "</td>");
+        tElement.innerHTML = "<td style=\"font-style:bold !important\">".concat(serie.id, "</td>\n        <td><a href=").concat(serie.website, "> ").concat(serie.name, "</a></td>\n        <td>").concat(serie.channel, "</td>\n        <td>").concat(serie.seasons, "</td>");
         seriesBody.appendChild(tElement);
     }
     seriesTable.appendChild(seriesBody);

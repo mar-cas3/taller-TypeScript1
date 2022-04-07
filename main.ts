@@ -9,11 +9,10 @@ showStatNumSeason();
 
 function showSeriesTable(): void {
     let seriesBody: HTMLElement = document.createElement("tBody");
-
     for (let serie of series) {
         let tElement: HTMLElement = document.createElement("tr");
-        tElement.innerHTML = `<td>${serie.id}</td>
-        <td style="font-style: bold"><a href=${serie.website}> ${serie.name}</a></td>
+        tElement.innerHTML = `<td style="font-style:bold !important">${serie.id}</td>
+        <td><a href=${serie.website}> ${serie.name}</a></td>
         <td>${serie.channel}</td>
         <td>${serie.seasons}</td>`;
         seriesBody.appendChild(tElement);
