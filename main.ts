@@ -2,9 +2,10 @@ import { Serie } from "./serie.js";
 import { series } from "./data.js";
 
 let seriesTable: HTMLElement = document.getElementById("series")!;
-// let seriesCaption: HTMLElement = document.getElementsByTagName("caption")[0]!;
+let seriesCaption: HTMLElement = document.getElementById("series-caption")!;
 
 showSeriesTable();
+showStatNumSeason();
 
 function showSeriesTable(): void {
     let seriesBody: HTMLElement = document.createElement("tBody");
@@ -29,8 +30,6 @@ function showStatNumSeason(): void {
     }
     let avgSeason: number = totalSeason / totalSeries;
 
-
-    // seriesCaption.innerHTML = `Seasons average: ${avgSeason}`;
-
+    seriesCaption.innerHTML = `Seasons average: ${avgSeason}`;
 }
 
