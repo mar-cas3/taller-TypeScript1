@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+#tv-logo-img {
+    max-height: 100px
+}
+
 
 #series {
     display: block;
